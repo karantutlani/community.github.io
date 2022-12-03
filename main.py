@@ -27,6 +27,8 @@ list_of_hashes = sheet.get_all_records()
 print(list_of_hashes)
 
 #start building html pages
+#add the table from the google sheet
+
 
 #https://docs.google.com/spreadsheets/d/13AU6tbAudnYdcr1Avl0DTbXAaOEW1pSpP1nK8x7Ov2M/edit?usp=sharing
 
