@@ -1,5 +1,3 @@
-
-
 start = """
 <!DOCTYPE HTML>
 <!--
@@ -56,7 +54,6 @@ banner = """
 				</div>
 			</div>
 """
-
 
 
 main = """

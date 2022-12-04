@@ -1,17 +1,14 @@
 {
-	"folders": [
-		{
-			"name": "community.github.io",
-			"path": "."
-		},
-		{
-			"name": "assets",
-			"path": "../../../../Downloads/html5up-minimaxing (1)/assets"
-		},
-		{
-			"name": "images",
-			"path": "../../../../Downloads/html5up-minimaxing (1)/images"
-		}
-	],
-	"settings": {}
+    "folders": [
+        {"name": "community.github.io", "path": "."},
+        {
+            "name": "assets",
+            "path": "../../../../Downloads/html5up-minimaxing (1)/assets",
+        },
+        {
+            "name": "images",
+            "path": "../../../../Downloads/html5up-minimaxing (1)/images",
+        },
+    ],
+    "settings": {},
 }

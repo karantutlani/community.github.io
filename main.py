@@ -1,5 +1,5 @@
 # This is the database file
-#https://docs.google.com/spreadsheets/d/13AU6tbAudnYdcr1Avl0DTbXAaOEW1pSpP1nK8x7Ov2M/edit?usp=sharing
+# https://docs.google.com/spreadsheets/d/13AU6tbAudnYdcr1Avl0DTbXAaOEW1pSpP1nK8x7Ov2M/edit?usp=sharing
 
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
@@ -14,8 +14,8 @@ import urllib
 import urllib2
 
 # Use creds to create a client to interact with the Google Drive API
-scope = ['https://spreadsheets.google.com/feeds']
-creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
+scope = ["https://spreadsheets.google.com/feeds"]
+creds = ServiceAccountCredentials.from_json_keyfile_name("client_secret.json", scope)
 client = gspread.authorize(creds)
 
 # Find a workbook by name and open the first sheet
@@ -26,9 +26,8 @@ sheet = client.open("test").sheet1
 list_of_hashes = sheet.get_all_records()
 print(list_of_hashes)
 
-#start building html pages
-#add the table from the google sheet
+# start building html pages
+# add the table from the google sheet
 
 
-#https://docs.google.com/spreadsheets/d/13AU6tbAudnYdcr1Avl0DTbXAaOEW1pSpP1nK8x7Ov2M/edit?usp=sharing
-
+# https://docs.google.com/spreadsheets/d/13AU6tbAudnYdcr1Avl0DTbXAaOEW1pSpP1nK8x7Ov2M/edit?usp=sharing
