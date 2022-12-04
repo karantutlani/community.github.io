@@ -12,7 +12,7 @@ with open("index.html", "w") as f:
     f.write(start)
     f.write(header)
     f.write(banner)
-    #put table here from df
+    # put table here from df
     f.write(main)
     # add the generated content
     f.write(doc.getvalue())
