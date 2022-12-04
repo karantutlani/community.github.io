@@ -1,34 +1,78 @@
 # This is the database file
-#https://docs.google.com/spreadsheets/d/13AU6tbAudnYdcr1Avl0DTbXAaOEW1pSpP1nK8x7Ov2M/edit?usp=sharing
+# https://docs.google.com/spreadsheets/d/13AU6tbAudnYdcr1Avl0DTbXAaOEW1pSpP1nK8x7Ov2M/edit?usp=sharing
+import pandas as pd
+from yattag import Doc
+from template import start, header, banner, main, footer, scripts
 
-import gspread
-from oauth2client.service_account import ServiceAccountCredentials
-import pprint
-import time
-import datetime
-import os
-import sys
-import json
-import requests
-import urllib
-import urllib2
+sheet_names = ["WELCOME!",
+"Sheet37",
+"Abuse",
+"Addictions",
+"AIDS Hepatitis C",
+"Bereavement",
+"Anger Management",
+"Black Lives",
+"Brain InjuryTumour",
+"Clothing Donations",
+"Community Programs",
+"Disability",
+"Education",
+"Emergency Services",
+"Employment Services",
+"Family Services",
+"Food Banks",
+"Financial",
+"Francophones",
+"Government",
+"Healthcare",
+"Homelessness",
+"Housing",
+"Indigenous People",
+"LGBTQ2S+",
+"Legal Assistance",
+"Mental Health",
+"Newcomers",
+"Pregnancy",
+"Older Adults",
+"Transportation",
+"Youth"]
 
-# Use creds to create a client to interact with the Google Drive API
-scope = ['https://spreadsheets.google.com/feeds']
-creds = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
-client = gspread.authorize(creds)
+doc, tag, text = Doc().tagtext()
 
-# Find a workbook by name and open the first sheet
-# Make sure you use the right name here.
-sheet = client.open("test").sheet1
+with tag("h1"):
+    text("Hello world!")
 
-# Extract and print all of the values
-list_of_hashes = sheet.get_all_records()
-print(list_of_hashes)
-
-#start building html pages
-#add the table from the google sheet
+print(doc.getvalue())
 
 
-#https://docs.google.com/spreadsheets/d/13AU6tbAudnYdcr1Avl0DTbXAaOEW1pSpP1nK8x7Ov2M/edit?usp=sharing
+for sheet in sheet_names:
+    try:
+        sheet_id = "13AU6tbAudnYdcr1Avl0DTbXAaOEW1pSpP1nK8x7Ov2M"
+        sheet_name = sheet
+        url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={sheet_name}"
+        data = pd.read_csv(url)
+        data.dropna(axis=1)
+    except:
+        print("Error with {}".format(sheet))
+        pass
 
+    #print(data.head())
+    try:
+        with open(f"{sheet_name}.html", "w") as f:
+            f.write(start)
+            f.write(header)
+            f.write(banner)
+            f.write(pd.DataFrame.to_html(data))
+            #put table here from df
+            f.write(main)
+            # add the generated content
+            f.write(doc.getvalue())
+            f.write(footer)
+            f.write(scripts)
+
+            #print(pd.DataFrame.to_html(data))
+    except:
+        pass
+
+
+print("Done")
