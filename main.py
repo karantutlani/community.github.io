@@ -11,9 +11,8 @@ def generate_html():
         try:
             spreadsheet_id = "13AU6tbAudnYdcr1Avl0DTbXAaOEW1pSpP1nK8x7Ov2M"
             url = f"https://docs.google.com/spreadsheets/d/{spreadsheet_id}/gviz/tq?tqx=out:csv&gid={sheet_id}"
-            #Drop columns and rows with NaN values
             df = pd.read_csv(url)
-            #df.drop(columns='1', inplace=True)# remove unnecessary index column called "1"
+            # Drop columns and rows with NaN values
             df.dropna(axis= 1,how='all', inplace=True)# remove columns with all NaN values
             df.dropna(axis= 0,how='all', inplace=True)# remove rows with all NaN values
             df.drop([0], axis=0, inplace=True) # Drop row title index:0 
