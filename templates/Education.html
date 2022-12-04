@@ -1,0 +1,468 @@
+
+  <head>
+    <title>Community Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  </style>
+  </head>
+
+
+<body>
+  <ul>
+    <li><a href="WELCOME!.html">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Data</a>
+      <div class="dropdown-content">
+        <a href="Abuse.html">Abuse</a>
+        <a href="Addictions.html">Addictions</a>
+        <a href="AIDS Hepatitis C.html">AIDS Hepatitis C</a>
+        <a href="Anger Management.html">Anger Management</a>
+        <a href="Bereavement.html">Bereavement</a>
+        <a href="Black Lives.html">Black Lives</a>
+        <a href="Brain InjuryTumour.html">Brain InjuryTumour</a>
+        <a href="Clothing Donations.html">Clothing Donations</a>
+        <a href="Community Programs.html">Community Programs</a>
+        <a href="Disability.html">Disability</a>
+        <a href="Education.html">Education</a>
+        <a href="Emergency Services.html">Emergency Services</a>
+        <a href="Employment Services.html">Employment Services</a>
+        <a href="Family Services.html">Family Services</a>
+        <a href="Financial.html">Financial</a>
+        <a href="Food Banks.html">Food Banks</a>
+        <a href="Francophones.html">Francophones</a>
+        <a href="Government.html">Government</a>
+        <a href="Healthcare.html">Healthcare</a>
+        <a href="Homelessness.html">Homelessness</a>
+        <a href="Housing.html">Housing</a>
+        <a href="Indigenous People.html">Indigenous People</a>
+        <a href="Legal Assistance.html">Legal Assistance</a>
+        <a href="LGBTQ2S+.html">LGBTQ2S+</a>
+        <a href="Mental Health.html">Mental Health</a>
+        <a href="Newcomers.html">Newcomers</a>
+        <a href="Older Adults.html">Older Adults</a>
+        <a href="Pregnancy.html">Pregnancy</a>
+        <a href="Transportation.html">Transportation</a>
+        <a href="Youth.html">Youth</a>
+      </div>
+    </li>
+  </ul>
+
+				<!-- Banner -->
+				<div id="banner-wrapper">
+					<div class="container">
+
+						<div id="banner">
+							<h2>Education</h2>
+							
+						</div>
+
+					</div>
+				</div>
+	
+
+<input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search for ...">
+
+<table border="1" class="dataframe" id="myTable">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Category</th>
+      <th>Service Name</th>
+      <th>Service Location</th>
+      <th>Contact</th>
+      <th>Service Description</th>
+      <th>Additional Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>-</td>
+      <td>Cambrian College</td>
+      <td>Sudbury, Espanola, Little Current</td>
+      <td>705-566-8101</td>
+      <td>Cambrian College is a college of applied arts and technology in Greater Sudbury, Ontario, Canada. Established in 1967, and funded by the province of Ontario, Cambrian has campuses in Sudbury, Espanola and Little Current.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>-</td>
+      <td>Laurentian University</td>
+      <td>Sudbury</td>
+      <td>705-675-1151</td>
+      <td>Laurentian University is a mid-sized bilingual public university in Greater Sudbury, Ontario, Canada,</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>-</td>
+      <td>Cambrian College Upgrading</td>
+      <td>Sudbury</td>
+      <td>705-566-8101 x7712</td>
+      <td>Prepare for Cambrian college programs.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>-</td>
+      <td>Collège Boreal</td>
+      <td>Sudbury, Hearst, Timmins, Kapuskasing, Nipissing, Toronto, Windsor</td>
+      <td>705-560-6673 x3085</td>
+      <td>Collège Boréal is a francophone College of Applied Arts and Technology serving Northern and Central Southwestern Ontario</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>-</td>
+      <td>College Boreal Satellite Campus</td>
+      <td>38 St. Christopher St. Noelville</td>
+      <td>705-898-2244</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>-</td>
+      <td>Glenn Crombie Ctr, disability</td>
+      <td>-</td>
+      <td>705-565-8101 x7420</td>
+      <td>The Glenn Crombie Centre for Accessibility and Wellness is a multi-service complex that promotes accessibility, counselling, and wellness for students at Cambrian College.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>-</td>
+      <td>Kenjgewin Teg</td>
+      <td>Manitoulin</td>
+      <td>705-377-4342</td>
+      <td>Kenjgewin Teg has offered post secondary programming, both university and college accredited programs, since 1994. The Post-Secondary Education and Training team coordinates and plans collaboratively to provide community-based programs to its member First Nations and non-First Nations communities.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>-</td>
+      <td>Alpha En Partage</td>
+      <td>St. Charles</td>
+      <td>705-867-2220</td>
+      <td>Alpha en Partage de Sudbury Est is a non-profit organization and has been established since 1998 in the Sudbury East region serving the following Communities; (St. Charles, Markstay/Warren, Noëlville, Alban, Wahnapitae and Killarney). We offer a variety of programs to adults age 19 and older seeking to improve their English, math, reading, writing, digital technology and employability skills. Our programming is based on individual needs toward these following goal paths:</td>
+      <td>http://www.alphaenpartage.ca/</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Early Learning</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>-</td>
+      <td>Carrefour francophone de Sudbury</td>
+      <td>-</td>
+      <td>705-675-6493</td>
+      <td>Early Childhood Learning Centre</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>-</td>
+      <td>Carrefourw Options +</td>
+      <td>-</td>
+      <td>705-525-0110</td>
+      <td>Guidance and Special Education services</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>-</td>
+      <td>Centre de formation et de perfectionnement du grand Sudbury</td>
+      <td>-</td>
+      <td>705-688-0005</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>-</td>
+      <td>Wordplay, Preschool Speech &amp; Language</td>
+      <td>Espanola</td>
+      <td>705-869-1564</td>
+      <td>Speech and language services for children from birth to school age.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>-</td>
+      <td>EarlyON Centres</td>
+      <td>Manitoulin Island</td>
+      <td>(705)368-3400</td>
+      <td>EarlyON centres offer free drop-in programs for caregivers and children from birth to 6 years old.  You can learn and play with your child, meet people or get advice.\r\nEarlyON centres are open to all families.  They're welcoming places that offer a range of services:\r\n join fun activities - reading, storytelling, sing-alongs, games and more\r\nget advice from professionals trained in early childhood development\r\nfind out about other family services in your community\r\nconnect with other families with young children</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>-</td>
+      <td>EarlyON Centres</td>
+      <td>Lacloche</td>
+      <td>705-869-5545</td>
+      <td>EarlyON centres offer free drop-in programs for caregivers and children from birth to 6 years old.  You can learn and play with your child, meet people or get advice.\r\nEarlyON centres are open to all families.  They're welcoming places that offer a range of services:\r\n join fun activities - reading, storytelling, sing-alongs, games and more\r\nget advice from professionals trained in early childhood development\r\nfind out about other family services in your community\r\nconnect with other families with young children</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>-</td>
+      <td>EarlyON Centres</td>
+      <td>Sudbury East</td>
+      <td>705-898-2754</td>
+      <td>EarlyON centres offer free drop-in programs for caregivers and children from birth to 6 years old.  You can learn and play with your child, meet people or get advice.\r\nEarlyON centres are open to all families.  They're welcoming places that offer a range of services:\r\n join fun activities - reading, storytelling, sing-alongs, games and more\r\nget advice from professionals trained in early childhood development\r\nfind out about other family services in your community\r\nconnect with other families with young children</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>-</td>
+      <td>EarlyON Centres</td>
+      <td>Sudbury North</td>
+      <td>705-864-1886</td>
+      <td>EarlyON centres offer free drop-in programs for caregivers and children from birth to 6 years old.  You can learn and play with your child, meet people or get advice.\r\nEarlyON centres are open to all families.  They're welcoming places that offer a range of services:\r\n join fun activities - reading, storytelling, sing-alongs, games and more\r\nget advice from professionals trained in early childhood development\r\nfind out about other family services in your community\r\nconnect with other families with young children</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>-</td>
+      <td>EarlyON Centres</td>
+      <td>Mnidoo Mnising</td>
+      <td>705-377-4342</td>
+      <td>EarlyON centres offer free drop-in programs for caregivers and children from birth to 6 years old.  You can learn and play with your child, meet people or get advice.\r\nEarlyON centres are open to all families.  They're welcoming places that offer a range of services:\r\n join fun activities - reading, storytelling, sing-alongs, games and more\r\nget advice from professionals trained in early childhood development\r\nfind out about other family services in your community\r\nconnect with other families with young children</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Continuing Education</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>-</td>
+      <td>Barrydowne College</td>
+      <td>Sudbury</td>
+      <td>Principal Susan Kett at 705.566.2302.</td>
+      <td>For students 18 to 21 who want to return to secondary school to achieve an Ontario Secondary School Diploma</td>
+      <td>Barrydowne College is a re-engagement school in partnership with Cambrian College. This secondary school within a college supports students ages 18 to 21 who would benefit from a small class learning environment and who have not been successful in a regular secondary school. The setting, with small class sizes and personalized curriculum, allows for a focus on programming designed to meet student needs. Students earn credits, build soft skills, and develop links to community college programs including Dual Credits. Students also have access to employment services, giving them an opportunity to explore pathways to work, apprenticeship, college and university. The program supports students to stay in school and/or find viable employment for co-operative education credits. Students in Rainbow District School Board can obtain more information about this program by calling Principal Susan Kett at 705.566.2302.</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>-</td>
+      <td>Education &amp; Workplace Training</td>
+      <td>-</td>
+      <td>705-677-0432 x244</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>-</td>
+      <td>N'Swakamok Native Friendship Ctr</td>
+      <td>-</td>
+      <td>705-674-2128</td>
+      <td>Independant Learning courses with teacher supports</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>-</td>
+      <td>St. Albert Adult Learning Centre</td>
+      <td>-</td>
+      <td>705-763-3031</td>
+      <td>Independant Learning courses and PSW program</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>-</td>
+      <td>Kenjgewin Teg</td>
+      <td>Manitoulin</td>
+      <td>705-377-4342</td>
+      <td>Kenjgewin Teg has offered post secondary programming, both university and college accredited programs, since 1994. The Post-Secondary Education and Training team coordinates and plans collaboratively to provide community-based programs to its member First Nations and non-First Nations communities.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>-</td>
+      <td>Sudbury Secondary School Continuing Education</td>
+      <td>-</td>
+      <td>705-675-5481</td>
+      <td>Blended learning courses including both online and in person for individuals 18+ to acheive OSSDiploma</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>-</td>
+      <td>Chapleau Learning Centre</td>
+      <td>Chapleau</td>
+      <td>705-864-2323</td>
+      <td>Offers an adult and continuing education day school programs for those wishing to earn credits towards secondary school diploma, update their skills, changing careers, prerequisites for college or computer training.</td>
+      <td>https://adsbadulted.com/locations/chapleau-learning-centre/</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>-</td>
+      <td>Formation Plus</td>
+      <td>Chapleau</td>
+      <td>705-864-2763</td>
+      <td>Offers an adult and continuing education day school programs for those wishing to earn credits towards secondary school diploma, update their skills, changing careers, prerequisites for college or computer training in french</td>
+      <td>www.quatrain.org/fplus/</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>-</td>
+      <td>Pre- Employment Essential Skills</td>
+      <td>St. Charles</td>
+      <td>705-618-5330</td>
+      <td>Working at Heights, Aerial Work Platform, Fall Arrest, Forklift Training, First AID/CPR, Stay Safe, Babysitting Course.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>School Boards</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>-</td>
+      <td>Rainbow Schools</td>
+      <td>-</td>
+      <td>705-674-3171</td>
+      <td>K to 12 English Public Board with French Immersion</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>-</td>
+      <td>Sudbury Catholic District School Board</td>
+      <td>-</td>
+      <td>705-673-5620</td>
+      <td>K to 12 English Catholic Board with French Immersion</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>-</td>
+      <td>Conseil scolaire public du Grand Nord de l'Ontario</td>
+      <td>-</td>
+      <td>705-671-1533</td>
+      <td>K to 12 French Public Board</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>-</td>
+      <td>Conseil scolaire catholique Nouvelon</td>
+      <td>-</td>
+      <td>705-673-5626</td>
+      <td>K to 12 French Catholic Board</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>-</td>
+      <td>Algoma District School Board</td>
+      <td>Chapleau</td>
+      <td>705-864-1452</td>
+      <td>K to 12 English Public Board with French Immersion</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+		function searchTable() {
+			var input, filter, found, table, tr, td, i, j;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td");
+				for (j = 0; j < td.length; j++) {
+					if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+						found = true;
+					}
+				}
+				if (found) {
+					tr[i].style.display = "";
+					found = false;
+				} else {
+					tr[i].style.display = "none";
+				}
+			}
+		}
+		</script>
+</body>
+</html>
