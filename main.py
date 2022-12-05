@@ -24,7 +24,7 @@ def generate_index():
         f.write(start)
         f.write(header)
         f.write(banner("WELCOME TO THE COMMUNITY SERVICES DATABASE !".title()))
-        f.write(filter)
+        #f.write(filter)
         f.write(pd.DataFrame.to_html(df2.to_frame(), header=False, index = False, table_id= "myTable"))
         # put table here from df
         #f.write(main)
