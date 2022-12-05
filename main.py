@@ -20,7 +20,7 @@ def generate_index():
     #df2 = df2['A'].append(df2['B']).reset_index(drop=True)
     df2 = pd.concat([df2['A'], df2['B']]).reset_index(drop=True)
     #Save HTML
-    with open(f"templates/index.html", "w",encoding="utf-8") as f:
+    with open(f"index.html", "w",encoding="utf-8") as f:
         f.write(start)
         f.write(header)
         f.write(banner("WELCOME TO THE COMMUNITY SERVICES DATABASE !".title()))
@@ -45,7 +45,7 @@ def generate_html():
             df.drop([0], axis=0, inplace=True) # Drop row title index:0 
             df.replace(np.nan, "-", inplace=True)
             #Save HTML
-            with open(f"templates/{sheet_name}.html", "w",encoding="utf-8") as f:
+            with open(f"{sheet_name}.html", "w",encoding="utf-8") as f:
                 f.write(start)
                 f.write(header)
                 f.write(banner(sheet_name.title()))
