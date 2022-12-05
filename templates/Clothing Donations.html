@@ -1,0 +1,297 @@
+
+  <head>
+    <title>Community Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  </style>
+  </head>
+
+
+<body>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Data</a>
+      <div class="dropdown-content">
+        <a href="Abuse.html">Abuse</a>
+        <a href="Addictions.html">Addictions</a>
+        <a href="AIDS Hepatitis C.html">AIDS Hepatitis C</a>
+        <a href="Anger Management.html">Anger Management</a>
+        <a href="Bereavement.html">Bereavement</a>
+        <a href="Black Lives.html">Black Lives</a>
+        <a href="Brain InjuryTumour.html">Brain InjuryTumour</a>
+        <a href="Clothing Donations.html">Clothing Donations</a>
+        <a href="Community Programs.html">Community Programs</a>
+        <a href="Disability.html">Disability</a>
+        <a href="Education.html">Education</a>
+        <a href="Emergency Services.html">Emergency Services</a>
+        <a href="Employment Services.html">Employment Services</a>
+        <a href="Family Services.html">Family Services</a>
+        <a href="Financial.html">Financial</a>
+        <a href="Food Banks.html">Food Banks</a>
+        <a href="Francophones.html">Francophones</a>
+        <a href="Government.html">Government</a>
+        <a href="Healthcare.html">Healthcare</a>
+        <a href="Homelessness.html">Homelessness</a>
+        <a href="Housing.html">Housing</a>
+        <a href="Indigenous People.html">Indigenous People</a>
+        <a href="Legal Assistance.html">Legal Assistance</a>
+        <a href="LGBTQ2S+.html">LGBTQ2S+</a>
+        <a href="Mental Health.html">Mental Health</a>
+        <a href="Newcomers.html">Newcomers</a>
+        <a href="Older Adults.html">Older Adults</a>
+        <a href="Pregnancy.html">Pregnancy</a>
+        <a href="Transportation.html">Transportation</a>
+        <a href="Youth.html">Youth</a>
+      </div>
+    </li>
+  </ul>
+
+				<!-- Banner -->
+				<div id="banner-wrapper">
+					<div class="container">
+
+						<div id="banner">
+							<h2>Clothing Donations</h2>
+							
+						</div>
+
+					</div>
+				</div>
+	
+
+<input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search for ...">
+
+<table border="1" class="dataframe" id="myTable">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Category</th>
+      <th>Service Name</th>
+      <th>Service Location</th>
+      <th>Contact</th>
+      <th>Service Description</th>
+      <th>Additional Information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>-</td>
+      <td>John Howard Clothing Bank</td>
+      <td>Sudbury</td>
+      <td>705-673-9576</td>
+      <td>Donated items available.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>-</td>
+      <td>Elizabeth Fry Society of Sudbury</td>
+      <td>204 Elm Street Sudbury, ON P3C 1V3</td>
+      <td>705-673-1364</td>
+      <td>The Elizabeth Fry Society, Sudbury is dedicated to addressing the needs of persons in conflict with the law, or at risk of becoming in conflict with the law, and in particular the circumstances of women and young women in the criminal justice system.  Additional services provided involve: Anger Management, Clothing donations, Food Bank, Homelessness navigation, Legal assistance.</td>
+      <td>https://efrysudbury.com/</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>-</td>
+      <td>L'association des jeunes de la rue</td>
+      <td>Sudbury</td>
+      <td>705-675-6422</td>
+      <td>Offers help to the homeless by providing a wide range of services aimed at intervention, reintegration and social and community re-adaptation</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>-</td>
+      <td>St. Andrews United Church</td>
+      <td>Sudbury</td>
+      <td>705-674-0721</td>
+      <td>Donated items available.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>-</td>
+      <td>St. Vincent de Paul</td>
+      <td>Sudbury</td>
+      <td>705-897-1212</td>
+      <td>Donated items available.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>-</td>
+      <td>Jarrett Value Centre</td>
+      <td>Sudbury</td>
+      <td>705-525-5100</td>
+      <td>Second hand items available in store</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>-</td>
+      <td>Salvation Army Thrift Store</td>
+      <td>Sudbury</td>
+      <td>705-525-2433</td>
+      <td>Second hand items available in store</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>-</td>
+      <td>Sudbury Women's Centre</td>
+      <td>Sudbury</td>
+      <td>705-673-1916</td>
+      <td>Donated items available.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>-</td>
+      <td>Community Closet (Better Beginnings)</td>
+      <td>Sudbury</td>
+      <td>705-671-1941</td>
+      <td>The Community Closet is filled with donated items (clothing, household goods), which are available to the community at no charge. It is a safe and confidential place where community members can meet and access other community resources. Though we can not accept large furniture, we are often able to facilitate the donation’s transfer to a community member in need.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>-</td>
+      <td>CSC Closet</td>
+      <td>Sudbury</td>
+      <td>705-566-8101</td>
+      <td>Used-clothes depot for Cambrian College students. Provides work-ready clothes for interviews or employment. Accepts donations.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>-</td>
+      <td>The Go-Give Project</td>
+      <td>Sudbury</td>
+      <td>249 878 8226</td>
+      <td>Outreach service providing harm reduction, hot meals, and basic needs to the community.</td>
+      <td>www.thegogiveproject.org gogiveproject@gmail</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>-</td>
+      <td>Pentecostal Church</td>
+      <td>Chapleau</td>
+      <td>705-864-0828</td>
+      <td>Provides meals of hope and clothing to those in need</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>-</td>
+      <td>Missionaries of Hope</td>
+      <td>Chapleau</td>
+      <td>705-864-2818</td>
+      <td>Provides food and clothing for those in need</td>
+      <td>Temporarily closed due to COVID 19.</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>-</td>
+      <td>Manitoulin Family Resources</td>
+      <td>Mindemoya</td>
+      <td>705-368-3400 x 242</td>
+      <td>Provides assistance to individuals and families through a food bank and thrift shop.  Accepts donations of food, clothing, small household items and money throughout the year.</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>-</td>
+      <td>Clothing Exchange</td>
+      <td>Calvert Mennonite \nChurch- Monetville</td>
+      <td>705-898-2420</td>
+      <td>A "clothing exchange" providing free clothing &amp; household items to all.</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+		function searchTable() {
+			var input, filter, found, table, tr, td, i, j;
+			input = document.getElementById("myInput");
+			filter = input.value.toUpperCase();
+			table = document.getElementById("myTable");
+			tr = table.getElementsByTagName("tr");
+			for (i = 0; i < tr.length; i++) {
+				td = tr[i].getElementsByTagName("td");
+				for (j = 0; j < td.length; j++) {
+					if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+						found = true;
+					}
+				}
+				if (found) {
+					tr[i].style.display = "";
+					found = false;
+				} else {
+					tr[i].style.display = "none";
+				}
+			}
+		}
+		</script>
+</body>
+</html>
